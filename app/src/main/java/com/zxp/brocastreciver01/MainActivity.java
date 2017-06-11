@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn_broadcast;
+    private Button btn_broadcast,btn_startAnother;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btn_startAnother=(Button)findViewById(R.id.btn_startAnother);
+        btn_startAnother.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,TestBC2Activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zxp.brocastreciver01.MainActivity">
-
+    android:layout_height="match_parent">
     <Button
-        android:id="@+id/btn_broadcast"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="广播"/>
-
+        android:text="Register"/>
     <Button
-        android:id="@+id/btn_startAnother"
+        android:id="@+id/btn_unregister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="StartAnotherActivity"/>
+        android:text="UnRegister"
+        />
 
 
 
